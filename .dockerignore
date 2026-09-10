@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+data
+.env*
+DEMO-LOGIN.local.txt
+*.local.txt
+*.sqlite*
+*.tsbuildinfo
+work
