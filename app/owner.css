@@ -1,0 +1,85 @@
+.login-page {
+  max-width: 460px;
+  margin: 65px auto;
+  padding: 0 20px;
+}
+.login-page > .brand,
+.login-page > a > .brand {
+  justify-content: center;
+}
+.login-panel {
+  padding: 32px;
+  margin: 28px 0;
+}
+.login-panel h1 {
+  font-size: 32px;
+  margin: 14px 0;
+}
+.login-panel p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+.login-panel label {
+  margin: 17px 0;
+}
+.login-panel .button {
+  width: 100%;
+  margin-top: 8px;
+}
+.login-page > .back-link {
+  display: flex;
+  justify-content: center;
+}
+.owner-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #668056;
+  font-size: 12px;
+}
+.owner-controls button {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.reset-area {
+  margin-top: 24px;
+}
+.reset-area form {
+  max-width: 580px;
+  background: #f5f7ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+}
+.reset-area p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 10px 0 18px;
+}
+.reset-area input {
+  max-width: 320px;
+}
+.reset-area .action-group {
+  margin-top: 18px;
+}
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+@media (max-width: 520px) {
+  .owner-controls {
+    gap: 12px;
+  }
+  .login-page {
+    margin-top: 35px;
+  }
+  .login-panel {
+    padding: 24px;
+  }
+}

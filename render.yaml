@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: wirral-garden-demo
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: demo-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data/wgc
+      - key: DEMO_MODE
+        value: "true"
+      - key: OWNER_USERNAME
+        sync: false
+      - key: OWNER_PASSWORD_HASH
+        sync: false
+      - key: APP_ORIGIN
+        sync: false
