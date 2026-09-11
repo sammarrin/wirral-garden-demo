@@ -1,0 +1,472 @@
+{
+  "leads": [
+    {
+      "id": "demo-1",
+      "name": "Sarah Mitchell",
+      "email": "sarah.mitchell@example.com",
+      "phone": "07700 900001",
+      "location": "West Kirby, CH48",
+      "service": "Garden redesign",
+      "description": "We have recently moved into a house with a tired back garden. We would love a seating area, low-maintenance borders and a safe lawn for our two children. The garden is roughly 8 by 12 metres.",
+      "preferredDate": "",
+      "status": "New",
+      "notes": "",
+      "createdAt": "2026-09-11T18:22:37.596Z"
+    },
+    {
+      "id": "demo-2",
+      "name": "James Thompson",
+      "email": "james.thompson@example.com",
+      "phone": "07700 900002",
+      "location": "Heswall, CH60",
+      "service": "Patios & paving",
+      "description": "Looking to replace a cracked concrete patio with porcelain paving, approximately 25 square metres. There is side access for materials. Could you include removal of the old patio?",
+      "preferredDate": "",
+      "status": "New",
+      "notes": "",
+      "createdAt": "2026-09-10T18:22:37.604Z"
+    },
+    {
+      "id": "demo-3",
+      "name": "Emma Davies",
+      "email": "emma.davies@example.com",
+      "phone": "07700 900003",
+      "location": "Bebington, CH63",
+      "service": "Fencing",
+      "description": "Three fence panels came down in the wind. We would like the whole run of six panels replaced with concrete posts and gravel boards.",
+      "preferredDate": "",
+      "status": "New",
+      "notes": "",
+      "createdAt": "2026-09-09T18:22:37.604Z"
+    },
+    {
+      "id": "demo-4",
+      "name": "Oliver Hughes",
+      "email": "oliver.hughes@example.com",
+      "phone": "07700 900004",
+      "location": "Hoylake, CH47",
+      "service": "Lawn & turf",
+      "description": "Our lawn is patchy and uneven. We need around 60 square metres levelled and returfed. There is a narrow passage down the side of the house.",
+      "preferredDate": "",
+      "status": "Contacted",
+      "notes": "Spoke with Oliver. Arrange a site visit to check access and drainage.",
+      "createdAt": "2026-09-08T18:22:37.604Z"
+    },
+    {
+      "id": "demo-5",
+      "name": "Charlotte Evans",
+      "email": "charlotte.evans@example.com",
+      "phone": "07700 900005",
+      "location": "Greasby, CH49",
+      "service": "Garden maintenance",
+      "description": "We need a monthly garden visit for mowing, hedge trimming and keeping the beds tidy. Medium-sized front and rear gardens.",
+      "preferredDate": "",
+      "status": "Quote Sent",
+      "notes": "Sent an estimate of £140 per monthly visit. Follow up next week.",
+      "createdAt": "2026-09-07T18:22:37.604Z"
+    },
+    {
+      "id": "demo-6",
+      "name": "Daniel Roberts",
+      "email": "daniel.roberts@example.com",
+      "phone": "07700 900006",
+      "location": "Wallasey, CH45",
+      "service": "Patios & paving",
+      "description": "We would like a small sandstone patio outside the kitchen doors with a path leading to the shed. Around 18 square metres in total.",
+      "preferredDate": "",
+      "status": "Won",
+      "notes": "Quote accepted: £2,850. Confirm start date with the customer.",
+      "createdAt": "2026-09-06T18:22:37.604Z"
+    },
+    {
+      "id": "demo-7",
+      "name": "Sophie Williams",
+      "email": "sophie.williams@example.com",
+      "phone": "07700 900007",
+      "location": "Neston, CH64",
+      "service": "Garden redesign",
+      "description": "We want to turn a sloping garden into two usable levels with raised beds and a gravel seating area. Happy to discuss options and budget at a visit.",
+      "preferredDate": "",
+      "status": "Quote Sent",
+      "notes": "Design outline and £6,400 estimate sent. Customer reviewing options.",
+      "createdAt": "2026-09-05T18:22:37.604Z"
+    },
+    {
+      "id": "demo-8",
+      "name": "Thomas Wilson",
+      "email": "thomas.wilson@example.com",
+      "phone": "07700 900008",
+      "location": "Prenton, CH43",
+      "service": "Fencing",
+      "description": "Please quote for a new timber side gate and four closeboard fence panels. Existing posts appear sound but would appreciate advice.",
+      "preferredDate": "",
+      "status": "Won",
+      "notes": "Completed and customer happy. £1,180 total.",
+      "createdAt": "2026-09-04T18:22:37.604Z"
+    },
+    {
+      "id": "demo-9",
+      "name": "Lucy Taylor",
+      "email": "lucy.taylor@example.com",
+      "phone": "07700 900009",
+      "location": "Moreton, CH46",
+      "service": "Garden maintenance",
+      "description": "Looking for a one-off clearance of an overgrown back garden, including brambles and removal of an old compost bin.",
+      "preferredDate": "",
+      "status": "Lost",
+      "notes": "Customer postponed the work until next year.",
+      "createdAt": "2026-09-03T18:22:37.604Z"
+    },
+    {
+      "id": "demo-10",
+      "name": "Ben Clarke",
+      "email": "ben.clarke@example.com",
+      "phone": "07700 900010",
+      "location": "Caldy, CH48",
+      "service": "Lawn & turf",
+      "description": "We have a muddy area near our garden office and would like new turf and advice on drainage. Area is approximately 35 square metres.",
+      "preferredDate": "",
+      "status": "Contacted",
+      "notes": "Waiting for preferred site visit time.",
+      "createdAt": "2026-09-02T18:22:37.604Z"
+    }
+  ],
+  "quotes": [
+    {
+      "number": 1,
+      "id": "sample-quote-1",
+      "leadId": "demo-5",
+      "token": "",
+      "requestKey": "seed:demo-5",
+      "customerName": "Charlotte Evans",
+      "customerLocation": "Greasby, CH49",
+      "items": [
+        {
+          "description": "Monthly mowing and edging",
+          "quantityHundredths": 100,
+          "unitPricePence": 6500,
+          "totalPence": 6500
+        },
+        {
+          "description": "Hedge trimming",
+          "quantityHundredths": 100,
+          "unitPricePence": 4500,
+          "totalPence": 4500
+        },
+        {
+          "description": "Borders and green waste removal",
+          "quantityHundredths": 100,
+          "unitPricePence": 3000,
+          "totalPence": 3000
+        }
+      ],
+      "notes": "Price is per monthly visit. Frequency and start date to be agreed.",
+      "validUntil": "",
+      "totalPence": 14000,
+      "state": "Sent",
+      "createdAt": "2026-09-07T19:22:37.604Z",
+      "sentAt": "2026-09-07T19:23:37.604Z",
+      "respondedAt": null,
+      "version": 1
+    },
+    {
+      "number": 2,
+      "id": "sample-quote-2",
+      "leadId": "demo-6",
+      "token": "",
+      "requestKey": "seed:demo-6",
+      "customerName": "Daniel Roberts",
+      "customerLocation": "Wallasey, CH45",
+      "items": [
+        {
+          "description": "Ground preparation and waste removal",
+          "quantityHundredths": 100,
+          "unitPricePence": 65000,
+          "totalPence": 65000
+        },
+        {
+          "description": "Sandstone paving supplied and laid (m²)",
+          "quantityHundredths": 1800,
+          "unitPricePence": 10000,
+          "totalPence": 180000
+        },
+        {
+          "description": "Garden path finishing",
+          "quantityHundredths": 100,
+          "unitPricePence": 40000,
+          "totalPence": 40000
+        }
+      ],
+      "notes": "Includes labour, materials and waste removal as listed. Start date to be agreed.",
+      "validUntil": "",
+      "totalPence": 285000,
+      "state": "Accepted",
+      "createdAt": "2026-09-06T19:22:37.604Z",
+      "sentAt": "2026-09-06T19:23:37.604Z",
+      "respondedAt": "2026-09-06T20:23:37.604Z",
+      "version": 1
+    },
+    {
+      "number": 3,
+      "id": "sample-quote-3",
+      "leadId": "demo-7",
+      "token": "",
+      "requestKey": "seed:demo-7",
+      "customerName": "Sophie Williams",
+      "customerLocation": "Neston, CH64",
+      "items": [
+        {
+          "description": "Groundworks and levelling",
+          "quantityHundredths": 100,
+          "unitPricePence": 220000,
+          "totalPence": 220000
+        },
+        {
+          "description": "Retaining walls and raised beds",
+          "quantityHundredths": 100,
+          "unitPricePence": 280000,
+          "totalPence": 280000
+        },
+        {
+          "description": "Gravel seating area",
+          "quantityHundredths": 100,
+          "unitPricePence": 140000,
+          "totalPence": 140000
+        }
+      ],
+      "notes": "Includes labour, materials and waste removal as listed. Start date to be agreed.",
+      "validUntil": "",
+      "totalPence": 640000,
+      "state": "Sent",
+      "createdAt": "2026-09-05T19:22:37.604Z",
+      "sentAt": "2026-09-05T19:23:37.604Z",
+      "respondedAt": null,
+      "version": 1
+    },
+    {
+      "number": 4,
+      "id": "sample-quote-4",
+      "leadId": "demo-8",
+      "token": "",
+      "requestKey": "seed:demo-8",
+      "customerName": "Thomas Wilson",
+      "customerLocation": "Prenton, CH43",
+      "items": [
+        {
+          "description": "Closeboard fence panels installed",
+          "quantityHundredths": 400,
+          "unitPricePence": 22000,
+          "totalPence": 88000
+        },
+        {
+          "description": "Timber side gate supplied and fitted",
+          "quantityHundredths": 100,
+          "unitPricePence": 30000,
+          "totalPence": 30000
+        }
+      ],
+      "notes": "Includes labour, materials and waste removal as listed. Start date to be agreed.",
+      "validUntil": "",
+      "totalPence": 118000,
+      "state": "Accepted",
+      "createdAt": "2026-09-04T19:22:37.604Z",
+      "sentAt": "2026-09-04T19:23:37.604Z",
+      "respondedAt": "2026-09-04T20:23:37.604Z",
+      "version": 1
+    },
+    {
+      "number": 5,
+      "id": "sample-quote-5",
+      "leadId": "demo-9",
+      "token": "",
+      "requestKey": "seed:demo-9",
+      "customerName": "Lucy Taylor",
+      "customerLocation": "Moreton, CH46",
+      "items": [
+        {
+          "description": "Overgrown garden clearance",
+          "quantityHundredths": 100,
+          "unitPricePence": 35000,
+          "totalPence": 35000
+        },
+        {
+          "description": "Green waste and compost bin removal",
+          "quantityHundredths": 100,
+          "unitPricePence": 13000,
+          "totalPence": 13000
+        }
+      ],
+      "notes": "Includes labour, materials and waste removal as listed. Start date to be agreed.",
+      "validUntil": "",
+      "totalPence": 48000,
+      "state": "Declined",
+      "createdAt": "2026-09-03T19:22:37.604Z",
+      "sentAt": "2026-09-03T19:23:37.604Z",
+      "respondedAt": "2026-09-03T20:23:37.604Z",
+      "version": 1
+    }
+  ],
+  "events": [
+    {
+      "id": "enquiry:demo-1",
+      "leadId": "demo-1",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-11T18:22:37.596Z"
+    },
+    {
+      "id": "enquiry:demo-2",
+      "leadId": "demo-2",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-10T18:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-3",
+      "leadId": "demo-3",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-09T18:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-4",
+      "leadId": "demo-4",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-08T18:22:37.604Z"
+    },
+    {
+      "id": "df0b8cf7-0562-4915-b3a9-190daab44857",
+      "leadId": "demo-5",
+      "type": "Quote sent",
+      "detail": "WGC-0001 · seeded example",
+      "createdAt": "2026-09-07T19:23:37.604Z"
+    },
+    {
+      "id": "995d49da-3d33-49b3-9d44-fab4df10b084",
+      "leadId": "demo-5",
+      "type": "Quote created",
+      "detail": "WGC-0001 · seeded example",
+      "createdAt": "2026-09-07T19:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-5",
+      "leadId": "demo-5",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-07T18:22:37.604Z"
+    },
+    {
+      "id": "6cf11c51-9635-47a9-af18-6dbb7bcb58c1",
+      "leadId": "demo-6",
+      "type": "Quote accepted",
+      "detail": "WGC-0002 · seeded example",
+      "createdAt": "2026-09-06T20:23:37.604Z"
+    },
+    {
+      "id": "18a7c36e-8e92-4275-8124-0e2433ae1e02",
+      "leadId": "demo-6",
+      "type": "Quote sent",
+      "detail": "WGC-0002 · seeded example",
+      "createdAt": "2026-09-06T19:23:37.604Z"
+    },
+    {
+      "id": "ad704c25-7c7f-44b0-9766-116be8cd4b99",
+      "leadId": "demo-6",
+      "type": "Quote created",
+      "detail": "WGC-0002 · seeded example",
+      "createdAt": "2026-09-06T19:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-6",
+      "leadId": "demo-6",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-06T18:22:37.604Z"
+    },
+    {
+      "id": "cf35521a-0fe6-4d36-8c07-b4f262e1b16f",
+      "leadId": "demo-7",
+      "type": "Quote sent",
+      "detail": "WGC-0003 · seeded example",
+      "createdAt": "2026-09-05T19:23:37.604Z"
+    },
+    {
+      "id": "52b57ea0-209c-470f-ab0f-e8900f64c8de",
+      "leadId": "demo-7",
+      "type": "Quote created",
+      "detail": "WGC-0003 · seeded example",
+      "createdAt": "2026-09-05T19:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-7",
+      "leadId": "demo-7",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-05T18:22:37.604Z"
+    },
+    {
+      "id": "f28fee9f-dc97-42c6-a39d-0a65eb887290",
+      "leadId": "demo-8",
+      "type": "Quote accepted",
+      "detail": "WGC-0004 · seeded example",
+      "createdAt": "2026-09-04T20:23:37.604Z"
+    },
+    {
+      "id": "d79c6ee3-5599-4b27-ac84-b49eb6dc5f4f",
+      "leadId": "demo-8",
+      "type": "Quote sent",
+      "detail": "WGC-0004 · seeded example",
+      "createdAt": "2026-09-04T19:23:37.604Z"
+    },
+    {
+      "id": "08cf8009-4368-4d88-8d49-f400cc925cf6",
+      "leadId": "demo-8",
+      "type": "Quote created",
+      "detail": "WGC-0004 · seeded example",
+      "createdAt": "2026-09-04T19:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-8",
+      "leadId": "demo-8",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-04T18:22:37.604Z"
+    },
+    {
+      "id": "9304c541-4271-4e63-9cf0-ca7856c6f371",
+      "leadId": "demo-9",
+      "type": "Quote declined",
+      "detail": "WGC-0005 · seeded example",
+      "createdAt": "2026-09-03T20:23:37.604Z"
+    },
+    {
+      "id": "ceb5df77-fc93-44be-a65d-9aaac230e0bf",
+      "leadId": "demo-9",
+      "type": "Quote sent",
+      "detail": "WGC-0005 · seeded example",
+      "createdAt": "2026-09-03T19:23:37.604Z"
+    },
+    {
+      "id": "4d3b4fa6-1698-4dcb-a422-225e5ca4e1ff",
+      "leadId": "demo-9",
+      "type": "Quote created",
+      "detail": "WGC-0005 · seeded example",
+      "createdAt": "2026-09-03T19:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-9",
+      "leadId": "demo-9",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-03T18:22:37.604Z"
+    },
+    {
+      "id": "enquiry:demo-10",
+      "leadId": "demo-10",
+      "type": "Enquiry received",
+      "detail": "Customer submitted an enquiry.",
+      "createdAt": "2026-09-02T18:22:37.604Z"
+    }
+  ]
+}
