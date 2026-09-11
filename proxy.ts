@@ -2,6 +2,9 @@ import { NextResponse, type NextRequest } from "next/server";
 import { sessionName, validSession } from "./lib/auth";
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+  if ((pathname === "/demo" || pathname.startsWith("/demo/")) && !["GET", "HEAD"].includes(request.method)) {
+    return NextResponse.json({ error: "This demonstration is read-only." }, { status: 405, headers: { Allow: "GET, HEAD" } });
+  }
   const publicApi =
     pathname === "/api/leads" ||
     pathname === "/api/auth/login" ||
@@ -27,5 +30,5 @@ export function proxy(request: NextRequest) {
   return response;
 }
 export const config = {
-  matcher: ["/dashboard/:path*", "/api/:path*", "/quotes/:path*", "/login"],
+  matcher: ["/demo/:path*", "/dashboard/:path*", "/api/:path*", "/quotes/:path*", "/login"],
 };
