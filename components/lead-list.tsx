@@ -7,9 +7,11 @@ import { LeadTable } from "./lead-table";
 export function LeadList({
   leads,
   initialStatus,
+  basePath = "/dashboard",
 }: {
   leads: Lead[];
   initialStatus: string;
+  basePath?: string;
 }) {
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState(initialStatus);
@@ -62,7 +64,7 @@ export function LeadList({
           </button>
         )}
       </div>
-      <LeadTable leads={result} />
+      <LeadTable leads={result} basePath={basePath} />
     </section>
   );
 }

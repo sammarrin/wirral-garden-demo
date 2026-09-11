@@ -3,24 +3,24 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LayoutDashboard, Inbox, ArrowUpRight, Leaf } from "lucide-react";
 import { Brand } from "./brand";
-export function Sidebar() {
+export function Sidebar({ basePath = "/dashboard" }: { basePath?: string }) {
   const pathname = usePathname();
   return (
     <aside className="sidebar">
-      <Link href="/dashboard">
+      <Link href={basePath}>
         <Brand dark />
       </Link>
       <div className="workspace-label">YOUR WORKSPACE</div>
       <nav>
         <Link
-          className={pathname === "/dashboard" ? "active" : ""}
-          href="/dashboard"
+          className={pathname === basePath ? "active" : ""}
+          href={basePath}
         >
           <LayoutDashboard size={19} /> Overview
         </Link>
         <Link
-          className={pathname.startsWith("/dashboard/leads") ? "active" : ""}
-          href="/dashboard/leads"
+          className={pathname.startsWith(`${basePath}/leads`) ? "active" : ""}
+          href={`${basePath}/leads`}
         >
           <Inbox size={19} /> All leads
         </Link>

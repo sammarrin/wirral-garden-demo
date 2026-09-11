@@ -3,7 +3,7 @@ import { ArrowUpRight, Inbox } from "lucide-react";
 import type { Lead } from "@/lib/db";
 import { initials, shortDate } from "@/lib/format";
 import { StatusBadge } from "./status-badge";
-export function LeadTable({ leads }: { leads: Lead[] }) {
+export function LeadTable({ leads, basePath = "/dashboard" }: { leads: Lead[]; basePath?: string }) {
   if (!leads.length)
     return (
       <div className="empty-state">
@@ -32,7 +32,7 @@ export function LeadTable({ leads }: { leads: Lead[] }) {
           {leads.map((lead) => (
             <tr key={lead.id}>
               <td>
-                <Link className="customer" href={`/dashboard/leads/${lead.id}`}>
+                <Link className="customer" href={`${basePath}/leads/${lead.id}`}>
                   <span className="avatar">{initials(lead.name)}</span>
                   <span>
                     <strong>{lead.name}</strong>
@@ -47,7 +47,7 @@ export function LeadTable({ leads }: { leads: Lead[] }) {
               <td className="muted">{shortDate(lead.createdAt)}</td>
               <td>
                 <Link
-                  href={`/dashboard/leads/${lead.id}`}
+                  href={`${basePath}/leads/${lead.id}`}
                   aria-label={`Open ${lead.name}`}
                   className="row-link"
                 >

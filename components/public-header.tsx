@@ -7,6 +7,7 @@ export function PublicHeader() {
         <Brand />
       </Link>
       <nav>
+        <Link className="button small" href="/demo">View business dashboard demo</Link>
         <Link className="owner-link" href="/dashboard">
           Owner dashboard
         </Link>
